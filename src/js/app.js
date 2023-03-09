@@ -1,11 +1,10 @@
-import { createBreadCrumbs } from "./BreadCrumbs";
-import { createBody } from "./mainBody";
-import { createHeaderSection } from "./pageHeader";
-import { createResturantBanner } from "./restuarntBanner";
+import { createBreadCrumbs } from "./BreadCrumbs/breadCrumbsItem";
+import { createBody } from "./mainBody/mainBodyContainer";
+import { createHeaderSection } from "./pageHeader/PageHeaderContainer";
+import { createResturantBanner } from "./restuarntBanner/resturantBannerContainer";
 
 
 createHeaderSection();
-createBreadCrumbs();
+// createBreadCrumbs();
 createResturantBanner();
 createBody();
-// console.log(getElementById("aisdeItem"));

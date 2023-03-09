@@ -1,5 +1,5 @@
 import { createDomElement, appendChildrensInParent } from "../../helper";
-import { createSideNavListSectionList } from "./element";
+import { createSideNavListSectionList } from "./element/foodCategoryMenuItems";
 
 export function createSideNavListSection(parentId) {
     const sidenav=createDomElement({

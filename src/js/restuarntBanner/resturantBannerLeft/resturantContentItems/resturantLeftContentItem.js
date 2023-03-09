@@ -1,6 +1,6 @@
 import { createDomElement, appendChildrensInParent } from "../../../helper";
 import { contentItem } from "./helper";
-import { ratingTimimgCostContainerItems } from "./rtcContainer";
+import { ratingTimimgCostContainerItems } from "./rtcContainer/resturantBannerLeftRatingTimingCost";
 
 export function contentItems(parentId) {
     const resturantName=contentItem({

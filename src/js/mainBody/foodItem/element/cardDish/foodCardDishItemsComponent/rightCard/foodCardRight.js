@@ -1,7 +1,8 @@
 import { createDomElement, appendChildrensInParent } from "../../../../../../helper";
-import { createDishCradAddBtn } from "./addBtn";
+import { createDishCradAddBtn } from "./addBtn/foodCardAddBtn";
+// import { cardButtonClicked } from "./addBtn/event";
 
-export function createDishCradRight(image, subElementRightId, individualId, btnId){
+export function createDishCardRight(image, subElementRightId, individualId, btnId){
     const right=createDomElement({
         elementTag:"DIV",
         className:"center-body-card-img",
@@ -16,6 +17,7 @@ export function createDishCradRight(image, subElementRightId, individualId, btnI
     });
 
     const addBtn=createDishCradAddBtn(btnId);
+ 
 
     const display=createDomElement({
         elementTag:"DIV",
@@ -23,5 +25,6 @@ export function createDishCradRight(image, subElementRightId, individualId, btnI
         innerHtml:"customisable"
     });
     appendChildrensInParent(right.id,[dishImage,addBtn,display]);
-    return right
+  
+    return right;
 }

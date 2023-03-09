@@ -1,6 +1,6 @@
 import { createDomElement, appendChildrensInParent } from "../../../../../../helper";
 
-export function createDishCradleft(icon, dishName, price, description, subElementLeftId, individualId){
+export function createDishCardleft(icon, dishName, price, description, subElementLeftId, individualId){
     const left=createDomElement({
         elementTag:"DIV",
         className:"center-body-card-dish",

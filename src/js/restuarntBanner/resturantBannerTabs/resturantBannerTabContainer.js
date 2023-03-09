@@ -1,5 +1,5 @@
 import { createDomElement, appendChildrensInParent } from "../../helper";
-import { createBannerTabsSectionItem } from "./helper";
+import { createBannerTabsSectionItem } from "./resturantBannerTabContainerItems";
 
 export function createBannerTabsSection(parentId){
     const tabSection=createDomElement({

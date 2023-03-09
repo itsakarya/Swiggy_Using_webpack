@@ -1,6 +1,6 @@
 import { appendChildrensInParent, createDomElement } from "../../../../../../../helper";
-// import { cardButtonClicked } from "./event/event";
-
+import { cardButtonClicked } from "./event";
+// import  {cehck }from "./foodCardAddBtnhelper";
 
 export function createDishCradAddBtn(btnId){
     const btn=createDomElement({
@@ -9,11 +9,9 @@ export function createDishCradAddBtn(btnId){
         innerHtml:"ADD",
         id:btnId
     });
-  
-    // btn.onclick = (btnId) => {
-        
-    // };
-
+    // cehck(btnId);
+    btn.addEventListener("click",cardButtonClicked(btnId));
+   
     const plus=createDomElement({
         elementTag:"DIV",
         className:"center-body-card-img-btn-plus-icon",
@@ -21,4 +19,6 @@ export function createDishCradAddBtn(btnId){
     });
     btn.appendChild(plus);
     return btn;
+
 }
+

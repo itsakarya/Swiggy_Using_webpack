@@ -1,5 +1,5 @@
 import { createDomElement, appendChildrensInParent } from "../../../helper";
-import { createResturantDishesCard } from "./cardDish";
+import { createResturantDishesCard } from "./cardDish/foodCardItems";
 
 export function createResturantFoodItemsSectionItems(parentId) {
     const header=createDomElement({

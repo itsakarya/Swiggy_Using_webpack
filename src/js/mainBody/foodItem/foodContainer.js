@@ -1,5 +1,5 @@
 import { createDomElement, appendChildrensInParent } from "../../helper";
-import { createResturantFoodItemsSectionItems } from "./element";
+import { createResturantFoodItemsSectionItems } from "./element/foodContainerItems";
 
 export function createResturantFoodItemsSection(parentId) {
     const centerBody=createDomElement({

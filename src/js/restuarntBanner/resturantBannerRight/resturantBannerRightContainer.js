@@ -1,5 +1,5 @@
 import { createDomElement, appendChildrensInParent } from "../../helper";
-import { createBannerightSectionItems } from "./element";
+import { createBannerightSectionItems } from "./offerItems/resturantBannerRightContainerItems";
 
 export function createBannerightSection(parentId) {
     const offerContainer=createDomElement({
