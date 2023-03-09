@@ -1,6 +1,6 @@
 import { basket } from "../../../../../../aside";
 import { createDishCradAddBtn } from "./foodCardAddBtn";
-import { cehck }  from "./foodCardAddBtnhelper";
+// import { cehck }  from "./foodCardAddBtnhelper";
 
 
 export function addToCart(itemId) {
@@ -31,7 +31,7 @@ export function removeFromCart(itemId) {
      if(currItemIndex === -1){
      } else if(basket[currItemIndex].quantity === 1) {
         basket = basket.filter(item => item.id != itemId);
-        document.getElementById(itemId).innerHTML=cehck(itemId);
+        // document.getElementById(itemId).innerHTML=cehck(itemId);
         
      } else {
         basket[currItemIndex].quantity = basket[currItemIndex].quantity - 1;
